@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="buttonDelete" destination="i2q-TJ-7ic" id="K22-gK-RoD"/>
+                <outlet property="buttonDismiss" destination="1RE-dr-8bJ" id="3yq-9W-kJe"/>
+                <outlet property="buttonFaceA" destination="Yav-rE-268" id="YNh-wl-dF8"/>
+                <outlet property="buttonFaceB" destination="rdL-90-dTo" id="NQ0-Bc-Qej"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
             </connections>
         </placeholder>
@@ -14,18 +18,72 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                    <rect key="frame" x="8" y="162" width="108" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
                         <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
                     </constraints>
-                    <state key="normal" title="N"/>
+                    <state key="normal" title="NextKeyboard"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yav-rE-268">
+                    <rect key="frame" x="8" y="8" width="123" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="37Q-52-opf"/>
+                        <constraint firstAttribute="width" constant="46" id="kDU-3c-A2z"/>
+                    </constraints>
+                    <state key="normal" title="༼ つ ◕_◕ ༽つ"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdL-90-dTo">
+                    <rect key="frame" x="253" y="8" width="97" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="(◕‿◕✿)"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dr-bj-LeM">
+                    <rect key="frame" x="69" y="46" width="102" height="30"/>
+                    <state key="normal" title="༼ つ ಥ_ಥ ༽つ"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsz-pY-K0F">
+                    <rect key="frame" x="203" y="46" width="100" height="30"/>
+                    <state key="normal" title="(◕‿◕✿)"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2q-TJ-7ic">
+                    <rect key="frame" x="267" y="162" width="46" height="30"/>
+                    <state key="normal" title="◀️"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RE-dr-8bJ">
+                    <rect key="frame" x="316" y="162" width="46" height="30"/>
+                    <state key="normal" title="Enter">
+                        <color key="titleColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
             </subviews>
+            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="i2q-TJ-7ic" secondAttribute="bottom" constant="8" id="2hY-df-knb"/>
+                <constraint firstAttribute="bottom" secondItem="rdL-90-dTo" secondAttribute="bottom" constant="162" id="2ys-O1-j28"/>
+                <constraint firstAttribute="bottom" secondItem="Yav-rE-268" secondAttribute="bottom" constant="162" id="4H9-bX-xcc"/>
+                <constraint firstItem="i2q-TJ-7ic" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="267" id="54I-i6-4Fu"/>
+                <constraint firstAttribute="trailing" secondItem="rdL-90-dTo" secondAttribute="trailing" constant="16" id="69M-bE-TRi"/>
+                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="9lr-vC-LJ0"/>
+                <constraint firstItem="Yav-rE-268" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="B2E-xM-XFF"/>
+                <constraint firstItem="rdL-90-dTo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="262" id="DAQ-ah-juL"/>
+                <constraint firstItem="rdL-90-dTo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="DGR-KF-RCK"/>
+                <constraint firstAttribute="trailing" secondItem="1RE-dr-8bJ" secondAttribute="trailing" constant="13" id="KfP-iI-hU4"/>
+                <constraint firstAttribute="bottom" secondItem="1RE-dr-8bJ" secondAttribute="bottom" constant="8" id="Kkl-io-sr3"/>
                 <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
+                <constraint firstItem="rdL-90-dTo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="253" id="Qoe-1Z-qr0"/>
+                <constraint firstAttribute="trailing" secondItem="Yav-rE-268" secondAttribute="trailing" constant="244" id="UZa-Fg-ovt"/>
+                <constraint firstItem="Yav-rE-268" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Y7D-gn-DFS"/>
+                <constraint firstItem="rdL-90-dTo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="ciZ-Ds-ISX"/>
+                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="gMY-bB-aOd"/>
+                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gS3-H0-wQu"/>
+                <constraint firstAttribute="trailing" secondItem="i2q-TJ-7ic" secondAttribute="trailing" constant="62" id="gxr-IX-XCQ"/>
+                <constraint firstAttribute="trailing" secondItem="gRt-12-JcF" secondAttribute="trailing" constant="259" id="ikf-Oa-Ijg"/>
                 <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
+                <constraint firstItem="1RE-dr-8bJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="316" id="x3i-Cg-hPq"/>
+                <constraint firstAttribute="trailing" secondItem="rdL-90-dTo" secondAttribute="trailing" constant="25" id="yDb-hH-kOc"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
