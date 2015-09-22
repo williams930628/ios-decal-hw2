@@ -16,6 +16,7 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var buttonDelete: UIButton!
     @IBOutlet var buttonDismiss: UIButton!
     
+    
     var keyboardView: UIView!
 
     override func updateViewConstraints() {
@@ -54,8 +55,14 @@ class KeyboardViewController: UIInputViewController {
         self.textDocumentProxy.deleteBackward()
     }
     
-    
-    
+    @IBAction func buttonFaceC(sender: UIButton) {
+        if sender.tag == 0{
+            self.textDocumentProxy.insertText("I ❤ You ")
+        }else{
+            self.textDocumentProxy.insertText("I ❤ You too ")
+        }
+        
+    }
     
     
 

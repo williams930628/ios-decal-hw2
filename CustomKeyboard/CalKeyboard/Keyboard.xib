@@ -43,10 +43,16 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dr-bj-LeM">
                     <rect key="frame" x="69" y="46" width="102" height="30"/>
                     <state key="normal" title="༼ つ ಥ_ಥ ༽つ"/>
+                    <connections>
+                        <action selector="buttonFaceC:" destination="-1" eventType="touchUpInside" id="HNU-Mi-J9n"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsz-pY-K0F">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsz-pY-K0F">
                     <rect key="frame" x="203" y="46" width="100" height="30"/>
                     <state key="normal" title="(◕‿◕✿)"/>
+                    <connections>
+                        <action selector="buttonFaceC:" destination="-1" eventType="touchUpInside" id="EyI-bR-DCy"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2q-TJ-7ic">
                     <rect key="frame" x="267" y="162" width="46" height="30"/>
